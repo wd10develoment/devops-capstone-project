@@ -1,3 +1,11 @@
+---
+name: User story
+about: Describe this issueUser story template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
 
 ---
 **As a** [role]  
