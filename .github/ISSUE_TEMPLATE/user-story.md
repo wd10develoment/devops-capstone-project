@@ -1,22 +1,15 @@
 ---
-name: User story
-about: Describe this issueUser story template's purpose here.
-title: ''
-labels: ''
-assignees: ''
+name: "User story"
+about: "Describe this issueUser story template's purpose here."
 
----
+As a: ''
+I need: ''
+So that: ''
 
----
-**As a** [role]  
-**I need** [function]  
-**So that** [benefit]  
-      
-### Details and Assumptions
-    * [document what you know]      
-### Acceptance Criteria     
-    gherkin 
-    Given [some context]
-    When [certain action is taken]
-    Then [the outcome of action is observed]
+
+Details and Assumptions: 'document what you know'      
+
+Given: 'some context'
+When: 'certain action is taken'
+Then: 'the outcome of action is observed'
 ---
