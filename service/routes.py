@@ -61,7 +61,7 @@ def create_accounts():
 # LIST ALL ACCOUNTS
 ######################################################################
 # ... place you code here to LIST accounts ...
-@app.route("/accounts",methods=["GET"])
+@app.route("/accounts", methods=["GET"])
 def liest_accounts():
     """
     list all acounts
@@ -80,7 +80,7 @@ def liest_accounts():
 @app.route("/accounts/<int:account_id>", methods=["GET"])
 def get_accounts(account_id):
     """
-    Reads an account 
+    Reads an account
     this endpoint will read an account based the accont id that is required
     """
     account = Account.find(account_id)
@@ -89,8 +89,6 @@ def get_accounts(account_id):
         abort(status.HTTP_404_NOT_FOUND, f"Account with id [{account_id}] could not be found.")
     
     return account.serialize(), status.HTTP_200_OK
-
-
     ######################################################################
     # UPDATE AN EXISTING ACCOUNT
     ######################################################################
