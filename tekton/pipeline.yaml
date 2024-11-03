@@ -50,7 +50,7 @@ spec:
       - name: args
           value: ["--count","--max-complexity=15","--max-line-length=127","--statistics"]
       runAfter:
-        - tests
+        - clone
 
     - name: tests
       workspaces:
