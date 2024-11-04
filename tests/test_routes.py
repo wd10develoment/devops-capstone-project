@@ -36,7 +36,7 @@ class TestAccountService(TestCase):
         app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URI
         app.logger.setLevel(logging.CRITICAL)
         init_db(app)
-        talisman.force_https = False 
+        talisman.force_https = False
 
     @classmethod
     def tearDownClass(cls):
@@ -128,7 +128,6 @@ class TestAccountService(TestCase):
 
     # ADD YOUR TEST CASES HERE ...
     def test_get_account(self):
-        
         """It should Read a single Account"""
         account = self._create_accounts(1)[0]
         resp = self.client.get(
@@ -137,7 +136,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(data["name"], account.name)
-    
+
     def test_get_account_list(self):
         """it should be alist of ACCounts"""
         self._create_accounts(5)
