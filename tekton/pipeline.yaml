@@ -37,6 +37,7 @@ spec:
         value: $(params.branch)
       runAfter:
         - init
+
     - name: lint
       workspaces:
         - name: source
@@ -51,7 +52,6 @@ spec:
       runAfter:
         - clone
     
-
     - name: tests
       workspaces:
         - name: source
